@@ -15,7 +15,7 @@ import (
 	"strings"
 	"time"
 
-	"alismsproxyapi/src/github.com/alibabacloud-go/tea/tea"
+	"github.com/lfhy/alismsproxyapi/src/github.com/alibabacloud-go/tea/tea"
 )
 
 var defaultUserAgent = fmt.Sprintf("AlibabaCloud (%s; %s) Golang/%s Core/%s TeaDSL/1", runtime.GOOS, runtime.GOARCH, strings.Trim(runtime.Version(), "go"), "0.01")

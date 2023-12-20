@@ -1,9 +1,10 @@
 package alismsproxyapi_test
 
 import (
-	"alismsproxyapi"
 	"fmt"
 	"testing"
+
+	"github.com/lfhy/alismsproxyapi"
 )
 
 func TestSendCode(t *testing.T) {

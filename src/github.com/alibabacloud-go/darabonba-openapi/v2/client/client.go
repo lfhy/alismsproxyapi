@@ -7,11 +7,11 @@ package client
 import (
 	"io"
 
-	"alismsproxyapi/src/github.com/alibabacloud-go/tea/tea"
+	"github.com/lfhy/alismsproxyapi/src/github.com/alibabacloud-go/tea/tea"
 
-	openapiutil "alismsproxyapi/src/github.com/alibabacloud-go/openapi-util/service"
+	openapiutil "github.com/lfhy/alismsproxyapi/src/github.com/alibabacloud-go/openapi-util/service"
 
-	util "alismsproxyapi/src/github.com/alibabacloud-go/tea-utils/v2/service"
+	util "github.com/lfhy/alismsproxyapi/src/github.com/alibabacloud-go/tea-utils/v2/service"
 
 	spi "github.com/alibabacloud-go/alibabacloud-gateway-spi/client"
 	xml "github.com/alibabacloud-go/tea-xml/service"

@@ -30,7 +30,7 @@ import (
 	"strings"
 	"time"
 
-	"alismsproxyapi/src/github.com/alibabacloud-go/tea/tea"
+	"github.com/lfhy/alismsproxyapi/src/github.com/alibabacloud-go/tea/tea"
 
 	util "github.com/alibabacloud-go/tea-utils/service"
 	"github.com/tjfoc/gmsm/sm3"

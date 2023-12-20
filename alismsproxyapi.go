@@ -1,11 +1,12 @@
 package alismsproxyapi
 
 import (
-	"alismsproxyapi/client"
-	openapi "alismsproxyapi/src/github.com/alibabacloud-go/darabonba-openapi/v2/client"
-	"alismsproxyapi/src/github.com/alibabacloud-go/tea/tea"
 	"fmt"
 	"strings"
+
+	"github.com/lfhy/alismsproxyapi/client"
+	openapi "github.com/lfhy/alismsproxyapi/src/github.com/alibabacloud-go/darabonba-openapi/v2/client"
+	"github.com/lfhy/alismsproxyapi/src/github.com/alibabacloud-go/tea/tea"
 )
 
 type SMSClinet struct {

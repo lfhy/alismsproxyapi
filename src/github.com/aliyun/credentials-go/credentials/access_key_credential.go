@@ -1,6 +1,6 @@
 package credentials
 
-import "alismsproxyapi/src/github.com/alibabacloud-go/tea/tea"
+import "github.com/lfhy/alismsproxyapi/src/github.com/alibabacloud-go/tea/tea"
 
 // AccessKeyCredential is a kind of credential
 type AccessKeyCredential struct {

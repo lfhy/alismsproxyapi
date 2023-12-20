@@ -5,11 +5,11 @@
 package client
 
 import (
-	openapi "alismsproxyapi/src/github.com/alibabacloud-go/darabonba-openapi/v2/client"
-	endpointutil "alismsproxyapi/src/github.com/alibabacloud-go/endpoint-util/service"
-	openapiutil "alismsproxyapi/src/github.com/alibabacloud-go/openapi-util/service"
-	util "alismsproxyapi/src/github.com/alibabacloud-go/tea-utils/v2/service"
-	"alismsproxyapi/src/github.com/alibabacloud-go/tea/tea"
+	openapi "github.com/lfhy/alismsproxyapi/src/github.com/alibabacloud-go/darabonba-openapi/v2/client"
+	endpointutil "github.com/lfhy/alismsproxyapi/src/github.com/alibabacloud-go/endpoint-util/service"
+	openapiutil "github.com/lfhy/alismsproxyapi/src/github.com/alibabacloud-go/openapi-util/service"
+	util "github.com/lfhy/alismsproxyapi/src/github.com/alibabacloud-go/tea-utils/v2/service"
+	"github.com/lfhy/alismsproxyapi/src/github.com/alibabacloud-go/tea/tea"
 )
 
 type AddShortUrlRequest struct {

@@ -1,6 +1,6 @@
 package credentials
 
-import "alismsproxyapi/src/github.com/alibabacloud-go/tea/tea"
+import "github.com/lfhy/alismsproxyapi/src/github.com/alibabacloud-go/tea/tea"
 
 // StsTokenCredential is a kind of credentials
 type StsTokenCredential struct {

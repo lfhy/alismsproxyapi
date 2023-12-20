@@ -1,6 +1,6 @@
 package credentials
 
-import "alismsproxyapi/src/github.com/alibabacloud-go/tea/tea"
+import "github.com/lfhy/alismsproxyapi/src/github.com/alibabacloud-go/tea/tea"
 
 // BearerTokenCredential is a kind of credential
 type BearerTokenCredential struct {

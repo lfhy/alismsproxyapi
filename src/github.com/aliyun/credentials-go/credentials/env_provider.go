@@ -4,7 +4,7 @@ import (
 	"errors"
 	"os"
 
-	"alismsproxyapi/src/github.com/alibabacloud-go/tea/tea"
+	"github.com/lfhy/alismsproxyapi/src/github.com/alibabacloud-go/tea/tea"
 )
 
 type envProvider struct{}

@@ -1,4 +1,4 @@
-module alismsproxyapi
+module github.com/lfhy/alismsproxyapi
 
 go 1.20
 

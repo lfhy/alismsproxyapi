@@ -7,7 +7,7 @@ import (
 	"runtime"
 	"strings"
 
-	"alismsproxyapi/src/github.com/alibabacloud-go/tea/tea"
+	"github.com/lfhy/alismsproxyapi/src/github.com/alibabacloud-go/tea/tea"
 
 	ini "gopkg.in/ini.v1"
 )

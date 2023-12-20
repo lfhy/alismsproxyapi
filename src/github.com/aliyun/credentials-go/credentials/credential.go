@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"alismsproxyapi/src/github.com/alibabacloud-go/tea/tea"
+	"github.com/lfhy/alismsproxyapi/src/github.com/alibabacloud-go/tea/tea"
 
 	"github.com/alibabacloud-go/debug/debug"
 	"github.com/aliyun/credentials-go/credentials/request"

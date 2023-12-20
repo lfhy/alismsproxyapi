@@ -23,7 +23,7 @@ import (
 	"sync"
 	"time"
 
-	"alismsproxyapi/src/github.com/alibabacloud-go/tea/utils"
+	"github.com/lfhy/alismsproxyapi/src/github.com/alibabacloud-go/tea/utils"
 
 	"github.com/alibabacloud-go/debug/debug"
 

@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"strings"
 
-	"alismsproxyapi/src/github.com/alibabacloud-go/tea/tea"
+	"github.com/lfhy/alismsproxyapi/src/github.com/alibabacloud-go/tea/tea"
 )
 
 func GetEndpointRules(product, regionId, endpointType, network, suffix *string) (_result *string, _err error) {

@@ -4,7 +4,7 @@ package client
 import (
 	"io"
 
-	"alismsproxyapi/src/github.com/alibabacloud-go/tea/tea"
+	"github.com/lfhy/alismsproxyapi/src/github.com/alibabacloud-go/tea/tea"
 
 	credential "github.com/aliyun/credentials-go/credentials"
 )

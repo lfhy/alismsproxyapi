@@ -7,7 +7,7 @@ import (
 	"reflect"
 	"strings"
 
-	"alismsproxyapi/src/github.com/alibabacloud-go/tea/tea"
+	"github.com/lfhy/alismsproxyapi/src/github.com/alibabacloud-go/tea/tea"
 
 	v2 "github.com/clbanning/mxj/v2"
 )
