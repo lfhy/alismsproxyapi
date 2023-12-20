@@ -2,15 +2,22 @@ English | [简体中文](README-CN.md)
 ![](https://aliyunsdk-pages.alicdn.com/icons/AlibabaCloud.svg)
 
 # Alibaba Cloud Dysmsapi SDK for Go
+Modified at `github.com/alibabacloud-go/dysmsapi-20170525/v3'`
+
+Fixed issue with sending through Socks5 proxy
+
+Encapsulated SendSMS for fast SMS sending
+
+The usage method can be found in the `alismsproxyapi_test.go`
 
 ## Requirements
-- It's necessary for you to make sure your system have installed Go environment which version greater than 1.12.0.
+- It's necessary for you to make sure your system have installed Go environment which version greater than 1.20.0.
 
 ## Installation
 If you use `go mod` to manage your dependence, you can use the following command:
 
 ```sh
-$ go get github.com/alibabacloud-go/dysmsapi-20170525/v3
+$ go get github.com/lfhy/alismsproxyapi
 ```
 
 ## Issues
