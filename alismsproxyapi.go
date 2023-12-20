@@ -9,12 +9,17 @@ import (
 	"github.com/lfhy/alismsproxyapi/src/github.com/alibabacloud-go/tea/tea"
 )
 
-type SMSClinet struct {
+const (
+	AkSKEmptyError = "client 'AccessKeyId' or 'AccessKeySecret' is empty"
+	SmsEmptyError  = "smstemplate 'SignName' or 'TemplateCode' is empty"
+)
+
+type SMSClient struct {
 	c      *client.Client
-	option *SMSClinetOptions
+	option *SMSClientOptions
 }
 
-type SMSClinetOptions struct {
+type SMSClientOptions struct {
 	// 鉴权AK
 	AccessKeyId string
 	// 鉴权SK
@@ -32,13 +37,13 @@ type SMSClinetOptions struct {
 }
 
 // 创建阿里云验证码服务客户端
-func NewSMSClient(option SMSClinetOptions) (*SMSClinet, error) {
+func NewSMSClient(option SMSClientOptions) (*SMSClient, error) {
 	if option.AccessKeyId == "" || option.AccessKeySecret == "" {
-		return nil, fmt.Errorf("Client 'AccessKeyId' or 'AccessKeySecret' is empty")
+		return nil, fmt.Errorf(AkSKEmptyError)
 	}
 
 	if option.SignName == "" || option.TemplateCode == "" {
-		return nil, fmt.Errorf("SMSTemplate 'SignName' or 'TemplateCode' is empty")
+		return nil, fmt.Errorf(SmsEmptyError)
 	}
 	config := &openapi.Config{
 		// 必填，您的 AccessKey ID
@@ -74,7 +79,7 @@ func NewSMSClient(option SMSClinetOptions) (*SMSClinet, error) {
 	if err != nil {
 		return nil, err
 	}
-	return &SMSClinet{
+	return &SMSClient{
 		c:      c,
 		option: &option,
 	}, nil
@@ -83,7 +88,7 @@ func NewSMSClient(option SMSClinetOptions) (*SMSClinet, error) {
 // 发送验证码
 // 参数1:发送的手机号
 // 参数2:发送模板的参数 如：{\"code\":12345\"}
-func (c *SMSClinet) SendSMS(phone string, templateParam string) (*client.SendSmsResponse, error) {
+func (c *SMSClient) SendSMS(phone string, templateParam string) (*client.SendSmsResponse, error) {
 	sendSmsRequest := &client.SendSmsRequest{
 		PhoneNumbers:  tea.String(phone),
 		SignName:      tea.String(c.option.SignName),

@@ -9,7 +9,7 @@ import (
 
 func TestSendCode(t *testing.T) {
 	// 创建Option
-	option := alismsproxyapi.SMSClinetOptions{
+	option := alismsproxyapi.SMSClientOptions{
 		AccessKeyId:     "your_access_key_id",
 		AccessKeySecret: "your_access_key_secret",
 		SignName:        "sign_name",
